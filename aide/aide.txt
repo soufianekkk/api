@@ -1,0 +1,52 @@
+NODE DEBUT AVEC EXPRESS
+
+npm init
+
+npm init -y passe tout
+
+npm install express
+
+const express = require("express"); // recupe express
+
+const app = express(); //creer notre app
+
+app.get("/users", function (req, res) {  //creer une route
+  res.send("Hello World !");
+});
+
+app.listen(3006, () => {
+  console.log("App is listening on port 3006..."); // ecoute du port ...
+});
+
+
+
+API METHODS
+
+GET https://MDS-B3.sengsathit.repl.co/users
+
+POST https://MDS-B3.sengsathit.repl.co/users/register
+body = {
+	"key": "value"
+}
+
+PUT https://MDS-B3.sengsathit.repl.co/users/1
+body = {
+	"name": "value",
+	.....
+}
+
+DELETE https://MDS-B3.sengsathit.repl.co/users/1
+
+PATCH https://MDS-B3.sengsathit.repl.co/users/1
+body = {
+	"name": "value",
+	.....
+}
+
+Comment lire un fichier ?
+
+Comment le parser ?
+
+Comment Architecturer dossier ?
+
+Comment exporter de module ? 
